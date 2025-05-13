@@ -41,9 +41,7 @@
         }
 
         header {
-            background-image: url('header-bg.jpg');
-            background-size: cover;
-            background-position: center;
+            background-color: #4CAF50;
             padding: 60px 20px;
             text-align: center;
             color: white;
@@ -54,6 +52,7 @@
             text-align: center;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
 
         .service-item:hover {
@@ -62,16 +61,8 @@
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
-        .service-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-        }
-
-        .service-item:hover img {
-            transform: scale(1.05);
-            opacity: 0.8;
+        .service-item h3 {
+            color: #333;
         }
 
         .slideshow-container {
@@ -124,16 +115,22 @@
         <p>Complete Services for All Types of Registrations & Documents in Hyderabad</p>
     </header>
 
-    <!-- Slideshow Section -->
+    <!-- Slideshow Section (with no images) -->
     <div class="slideshow-container">
         <div class="mySlides fade">
-            <img src="image1.jpg" alt="Document Writing Service">
+            <div style="height: 300px; background-color: #f0f0f0;">
+                <h2 style="text-align: center; line-height: 300px;">Document Writing Services</h2>
+            </div>
         </div>
         <div class="mySlides fade">
-            <img src="image2.jpg" alt="Registration Services">
+            <div style="height: 300px; background-color: #e0e0e0;">
+                <h2 style="text-align: center; line-height: 300px;">Registration Services</h2>
+            </div>
         </div>
         <div class="mySlides fade">
-            <img src="image3.jpg" alt="Legal Documentation Services">
+            <div style="height: 300px; background-color: #d0d0d0;">
+                <h2 style="text-align: center; line-height: 300px;">Legal Documentation</h2>
+            </div>
         </div>
     </div>
 
@@ -141,12 +138,10 @@
     <div class="container">
         <h2>Our Services</h2>
         <div class="service-item">
-            <img src="service1.jpg" alt="Business Registration">
             <h3>Business Registration</h3>
             <p>Complete business registration services for new ventures, startups, and established businesses.</p>
         </div>
         <div class="service-item">
-            <img src="service2.jpg" alt="Legal Documentation">
             <h3>Legal Documentation</h3>
             <p>We provide legal document writing, notarization, and official paperwork services.</p>
         </div>
